@@ -1,0 +1,193 @@
+---
+daemonset:
+  # Annotations to apply to the daemonset
+  annotations: {}
+  # additionals labels
+  labels: {"elk-ucr"}
+  affinity: {}
+  # Include the daemonset
+  enabled: true
+  # Extra environment variables for Filebeat container.
+  envFrom: []
+  # - configMapRef:
+  #     name: config-secret
+  extraEnvs: []
+  #  - name: MY_ENVIRONMENT_VAR
+  #    value: the_value_goes_here
+  extraVolumes:
+  - name: loggable
+    emptyDir: {}
+  - name: thrash
+    emptyDir: {}
+  extraVolumeMounts:
+  - name: loggable
+    mountPath: /usr/share/loggable
+    readOnly: false
+  - name: thrash
+    mountPath: /usr/share/thrash
+    readOnly: false
+
+  hostNetworking: false
+  # Allows you to add any config files in /usr/share/filebeat
+  # such as filebeat.yml for daemonset
+  filebeatConfig:
+    filebeat.yml: |
+      filebeat.inputs:
+      - type: log
+        enabled: true
+        paths:
+          - /usr/share/loggable/log/*log
+          - /usr/share/thrash/log/*.cef
+        multiline.pattern: '^[0-9]{2}.[0-9]{2}.[0-9]{4}|^[0-9]{4}-[0-9]{2}-[0-9]{2}|^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])|0:0:0:0:0:0:0:1|^CEF:|'
+        multiline.negate: true
+        multiline.match: after
+        tags: ["workshop"]
+       
+      output.logstash:
+        hosts: ["logstash-logstash:5044"]
+        
+  maxUnavailable: 1
+  nodeSelector: {}
+  secretMounts: []
+  securityContext:
+    runAsUser: 0
+    privileged: false
+  resources:
+    requests:
+      cpu: "100m"
+      memory: "100Mi"
+    limits:
+      cpu: "1000m"
+      memory: "200Mi"
+  tolerations: []
+
+deployment:
+  annotations: {}
+  labels: {"THIS IS NOT WORKING BECAUSE IS DISABLED"}
+  affinity: {}
+  enabled: false
+  envFrom: []
+  extraEnvs: []
+  extraVolumes: []
+  extraVolumeMounts: []
+  filebeatConfig:
+    filebeat.yml: |
+      filebeat.inputs:
+      - type: tcp
+        max_message_size: 10MiB
+        host: "localhost:9000"
+
+      output.elasticsearch:
+        host: '${NODE_NAME}'
+        hosts: '${ELASTICSEARCH_HOSTS:elasticsearch-master:9200}'
+  nodeSelector: {}
+  secretMounts: []
+  securityContext:
+    runAsUser: 0
+    privileged: false
+  resources:
+    requests:
+      cpu: "100m"
+      memory: "100Mi"
+    limits:
+      cpu: "1000m"
+      memory: "200Mi"
+  tolerations: []
+
+# Replicas being used for the filebeat deployment
+replicas: 1
+
+extraContainers: ""
+
+extraInitContainers: []
+
+
+hostPathRoot: /var/lib
+
+dnsConfig: {}
+hostAliases: []
+
+image: "docker.elastic.co/beats/filebeat"
+imageTag: "7.17.3"
+imagePullPolicy: "IfNotPresent"
+imagePullSecrets: []
+
+livenessProbe:
+  exec:
+    command:
+      - sh
+      - -c
+      - |
+        #!/usr/bin/env bash -e
+        curl --fail 127.0.0.1:5066
+  failureThreshold: 3
+  initialDelaySeconds: 10
+  periodSeconds: 10
+  timeoutSeconds: 5
+
+readinessProbe:
+  exec:
+    command:
+      - sh
+      - -c
+      - |
+        #!/usr/bin/env bash -e
+        filebeat test output
+  failureThreshold: 3
+  initialDelaySeconds: 10
+  periodSeconds: 10
+  timeoutSeconds: 5
+
+managedServiceAccount: true
+
+clusterRoleRules:
+  - apiGroups:
+      - ""
+    resources:
+      - namespaces
+      - nodes
+      - pods
+    verbs:
+      - get
+      - list
+      - watch
+  - apiGroups:
+      - "apps"
+    resources:
+      - replicasets
+    verbs:
+      - get
+      - list
+      - watch
+
+podAnnotations:
+  {}
+
+serviceAccount: ""
+
+serviceAccountAnnotations:
+  {}
+
+terminationGracePeriod: 30
+priorityClassName: ""
+
+updateStrategy: RollingUpdate
+
+nameOverride: ""
+fullnameOverride: ""
+
+# DEPRECATED
+affinity: {}
+envFrom: []
+extraEnvs: []
+extraVolumes: []
+extraVolumeMounts: []
+# Allows you to add any config files in /usr/share/filebeat
+# such as filebeat.yml for both daemonset and deployment
+filebeatConfig: {}
+nodeSelector: {}
+podSecurityContext: {}
+resources: {}
+secretMounts: []
+tolerations: []
+labels: {}
