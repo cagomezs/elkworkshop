@@ -3268,7 +3268,7 @@
 [10/Feb/2017:23:42:04 -0400] "GET /shuttle/countdown/video/livevideo2.gif HTTP/1.0" 200 65576
 [10/Feb/2017:23:44:42 -0400] "GET /shuttle/missions/sts-70/images/images.html HTTP/1.0" 200 7225
 [10/Feb/2017:23:47:45 -0400] "GET /images/launchmedium.gif HTTP/1.0" 200 11853
-[10/Feb/2017:00:09:36 -0400] "GET /htbin/wais.pl?INTELSAT-VI-RESCUE HTTP/1.0" 200 5311
+[10/Feb/2017:00:09:36 -0400] "GET /htbin/wais.pl?TALLERSAT-VI-RESCUE HTTP/1.0" 200 5311
 [10/Feb/2017:00:10:25 -0400] "GET /images/ksclogo-medium.gif HTTP/1.0" 304 0
 [10/Feb/2017:00:13:41 -0400] "GET /images/USA-logosmall.gif HTTP/1.0" 200 234
 [10/Feb/2017:00:14:04 -0400] "GET /images/launchmedium.gif HTTP/1.0" 200 11853

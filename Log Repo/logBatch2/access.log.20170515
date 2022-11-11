@@ -4695,7 +4695,7 @@
 [15/May/2017:03:04:41 -0400] "GET /cgi-bin/imagemap/countdown70?405,287 HTTP/1.0" 302 68
 [15/May/2017:03:50:00 -0400] "GET /images/ksclogo-medium.gif HTTP/1.0" 200 5866
 [15/May/2017:03:55:48 -0400] "GET /shuttle/missions/sts-70/images/DSC-95EC-0001.jpg HTTP/1.0" 200 513911
-[15/May/2017:04:32:43 -0400] "GET /htbin/wais.pl?INTELSAT-VI-RESCUE HTTP/1.0" 200 5311
+[15/May/2017:04:32:43 -0400] "GET /htbin/wais.pl?TALLERSAT-VI-RESCUE HTTP/1.0" 200 5311
 [15/May/2017:04:48:39 -0400] "GET /shuttle/missions/sts-78/mission-sts-78.html HTTP/1.0" 200 4656
 [15/May/2017:04:55:22 -0400] "GET /history/apollo/images/apollo-logo.gif HTTP/1.0" 200 3047
 [15/May/2017:05:00:47 -0400] "GET /images/launch-small.gif HTTP/1.0" 200 3938

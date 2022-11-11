@@ -4084,7 +4084,7 @@
 [01/Aug/2017:10:48:02 -0400] "GET /history/apollo/apollo.html HTTP/1.0" 200 3260
 [01/Aug/2017:10:51:58 -0400] "GET /images/NASA-logosmall.gif HTTP/1.0" 200 786
 [01/Aug/2017:11:05:12 -0400] "GET /shuttle/technology/sts-newsref/sts_coord.html HTTP/1.0" 200 136804
-[01/Aug/2017:11:13:51 -0400] "GET /htbin/wais.pl?INTELSAT-VI-RESCUE HTTP/1.0" 200 5311
+[01/Aug/2017:11:13:51 -0400] "GET /htbin/wais.pl?TALLERSAT-VI-RESCUE HTTP/1.0" 200 5311
 [01/Aug/2017:11:15:01 -0400] "GET /history/apollo/images/apollo-logo1.gif HTTP/1.0" 200 1173
 [01/Aug/2017:11:15:10 -0400] "GET /shuttle/missions/sts-70/mission-sts-70.html HTTP/1.0" 200 15825
 [01/Aug/2017:11:17:49 -0400] "GET /shuttle/missions/sts-67/images/KSC-95EC-0394.jpg HTTP/1.0" 200 164562

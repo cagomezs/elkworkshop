@@ -3511,7 +3511,7 @@
 [28/Apr/2017:15:49:10 -0400] "GET /shuttle/countdown/countdown.html HTTP/1.0" 200 4247
 [28/Apr/2017:15:57:55 -0400] "GET /shuttle/missions/sts-70/images/KSC-95EC-1015.gif HTTP/1.0" 200 55442
 [28/Apr/2017:15:58:39 -0400] "GET /images/ksclogo-medium.gif HTTP/1.0" 200 5866
-[28/Apr/2017:16:06:26 -0400] "GET /htbin/wais.pl?INTELSAT-VI-RESCUE HTTP/1.0" 200 5311
+[28/Apr/2017:16:06:26 -0400] "GET /htbin/wais.pl?TALLERSAT-VI-RESCUE HTTP/1.0" 200 5311
 [28/Apr/2017:16:17:10 -0400] "GET /shuttle/countdown/liftoff.html HTTP/1.0" 200 4142
 [28/Apr/2017:16:26:35 -0400] "GET /images/NASA-logosmall.gif HTTP/1.0" 200 786
 [28/Apr/2017:16:37:06 -0400] "GET /history/apollo/apollo-13/sounds/a13_004.wav HTTP/1.0" 200 66764
@@ -4517,7 +4517,7 @@
 [28/Apr/2017:12:20:33 -0400] "GET /images/USA-logosmall.gif HTTP/1.0" 200 234
 [28/Apr/2017:12:20:54 -0400] "GET /history/apollo/apollo-17/sounds/ HTTP/1.0" 200 381
 [28/Apr/2017:12:24:43 -0400] "GET /images/MOSAIC-logosmall.gif HTTP/1.0" 200 363
-[28/Apr/2017:12:31:17 -0400] "GET /htbin/wais.pl?INTELSAT-VI-RESCUE HTTP/1.0" 200 5311
+[28/Apr/2017:12:31:17 -0400] "GET /htbin/wais.pl?TALLERSAT-VI-RESCUE HTTP/1.0" 200 5311
 [28/Apr/2017:12:38:35 -0400] "GET /images/KSC-logosmall.gif HTTP/1.0" 304 0
 [28/Apr/2017:12:41:25 -0400] "GET /images/ HTTP/1.0" 200 17688
 [28/Apr/2017:12:42:37 -0400] "GET /shuttle/missions/sts-71/sts-71-press-kit.txt HTTP/1.0" 200 78588

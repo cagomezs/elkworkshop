@@ -2318,7 +2318,7 @@
 [23/Nov/2017:23:38:13 -0400] "GET /shuttle/missions/sts-70/images/KSC-95EC-0852.gif HTTP/1.0" 200 23107
 [23/Nov/2017:23:38:22 -0400] "GET /elv/elvhead2.gif HTTP/1.0" 200 1733
 [23/Nov/2017:23:49:10 -0400] "GET /history/apollo/images/apollo-small.gif HTTP/1.0" 200 9630
-[23/Nov/2017:00:08:40 -0400] "GET /htbin/wais.pl?INTELSAT-VI-RESCUE HTTP/1.0" 200 5685
+[23/Nov/2017:00:08:40 -0400] "GET /htbin/wais.pl?TALLERSAT-VI-RESCUE HTTP/1.0" 200 5685
 [23/Nov/2017:00:10:47 -0400] "GET /shuttle/countdown/count70.gif HTTP/1.0" 200 48511
 [23/Nov/2017:00:13:45 -0400] "GET /images/NASA-logosmall.gif HTTP/1.0" 200 786
 [23/Nov/2017:00:15:46 -0400] "GET /images/USA-logosmall.gif HTTP/1.0" 200 234

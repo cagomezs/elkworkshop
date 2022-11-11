@@ -5455,7 +5455,7 @@
 [15/Sep/2017:23:51:16 -0400] "GET /images/ksclogo-medium.gif HTTP/1.0" 200 5866
 [15/Sep/2017:23:51:17 -0400] "GET /history/apollo/apollo-17/apollo-17-patch.jpg HTTP/1.0" 200 65536
 [15/Sep/2017:23:56:35 -0400] "GET /history/gemini/gemini-spacecraft.txt HTTP/1.0" 200 651
-[15/Sep/2017:23:58:58 -0400] "GET /htbin/wais.pl?INTELSAT-VI-RESCUE HTTP/1.0" 200 5341
+[15/Sep/2017:23:58:58 -0400] "GET /htbin/wais.pl?TALLERSAT-VI-RESCUE HTTP/1.0" 200 5341
 [15/Sep/2017:00:05:30 -0400] "GET /history/apollo/apollo-13/movies/apo13damage.mpg HTTP/1.0" 200 297851
 [15/Sep/2017:00:12:41 -0400] "GET /history/apollo/images/footprint-small.gif HTTP/1.0" 200 18149
 [15/Sep/2017:00:30:32 -0400] "GET /software/winvn/winvn.html HTTP/1.0" 304 0

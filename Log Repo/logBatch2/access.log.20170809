@@ -1898,7 +1898,7 @@
 [09/Aug/2017:00:21:48 -0400] "GET /shuttle/technology/images/et-intertank_1-small.gif HTTP/1.0" 200 79791
 [09/Aug/2017:00:28:38 -0400] "GET /images/ksclogosmall.gif HTTP/1.0" 200 3635
 [09/Aug/2017:00:55:24 -0400] "GET /shuttle/missions/sts-71/ HTTP/1.0" 200 4724
-[09/Aug/2017:01:21:58 -0400] "GET /htbin/wais.pl?INTELSAT-VI-RESCUE HTTP/1.0" 200 5874
+[09/Aug/2017:01:21:58 -0400] "GET /htbin/wais.pl?TALLERSAT-VI-RESCUE HTTP/1.0" 200 5874
 [09/Aug/2017:01:28:35 -0400] "GET /history/apollo/apollo-spacecraft.txt HTTP/1.0" 200 2261
 [09/Aug/2017:01:56:22 -0400] "GET /history/apollo/apollo-1/ HTTP/1.0" 200 1731
 [09/Aug/2017:01:58:19 -0400] "GET /icons/sound.xbm HTTP/1.0" 200 530

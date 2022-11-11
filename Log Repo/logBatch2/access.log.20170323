@@ -2050,7 +2050,7 @@
 [23/Mar/2017:22:53:51 -0400] "GET /elv/elvhead3.gif HTTP/1.0" 200 9925
 [23/Mar/2017:23:03:19 -0400] "GET /images/USA-logosmall.gif HTTP/1.0" 200 234
 [23/Mar/2017:23:07:33 -0400] "GET /images/ksclogo-medium.gif HTTP/1.0" 200 5866
-[23/Mar/2017:23:07:42 -0400] "GET /htbin/wais.pl?INTELSAT-VI-RESCUE HTTP/1.0" 200 5685
+[23/Mar/2017:23:07:42 -0400] "GET /htbin/wais.pl?TALLERSAT-VI-RESCUE HTTP/1.0" 200 5685
 [23/Mar/2017:23:14:02 -0400] "GET /images/KSC-logosmall.gif HTTP/1.0" 200 1204
 [23/Mar/2017:23:19:38 -0400] "GET /shuttle/technology/sts-newsref/sts-lcc.html HTTP/1.0" 200 32252
 [23/Mar/2017:23:44:38 -0400] "GET /history/apollo/apollo-1/images/apollo-1-crew.gif HTTP/1.0" 200 237568
